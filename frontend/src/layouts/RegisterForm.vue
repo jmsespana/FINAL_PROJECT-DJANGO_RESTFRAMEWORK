@@ -9,6 +9,7 @@
         label="Username"
         required
         outlined
+        prepend-icon="mdi-account"
       ></v-text-field>
       <v-text-field
         v-model="email"
@@ -16,6 +17,7 @@
         type="email"
         required
         outlined
+        prepend-icon="mdi-email"
       ></v-text-field>
       <v-text-field
         v-model="password"
@@ -23,6 +25,7 @@
         type="password"
         required
         outlined
+        prepend-icon="mdi-lock"
       ></v-text-field>
       <v-text-field
         v-model="confirmPassword"
@@ -30,6 +33,7 @@
         type="password"
         required
         outlined
+        prepend-icon="mdi-lock-outline"
       ></v-text-field>
       <v-row>
         <v-col>
@@ -42,6 +46,7 @@
     </v-form>
   </v-card>
 </template>
+
 
 <script>
 import { useAuthStore } from '@/stores/auth'; // Import the authStore
