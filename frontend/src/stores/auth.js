@@ -25,6 +25,7 @@ export const useAuthStore = defineStore("auth", {
         const response = await axios.post("/api/login/", {
           email: email,
           password: password,
+          
         });
 
         this.accessToken = response.data.access; // Set token in store
