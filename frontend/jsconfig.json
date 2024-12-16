@@ -1,20 +1,40 @@
+// {
+//   "compilerOptions": {
+//     "allowJs": true,
+//     "target": "es5",
+//     "module": "esnext",
+//     "baseUrl": "./",
+//     "moduleResolution": "bundler",
+//     "paths": {
+//       "@/*": [
+//         "src/*"
+//       ]
+//     },
+//     "lib": [
+//       "esnext",
+//       "dom",
+//       "dom.iterable",
+//       "scripthost"
+//     ]
+//   }
+// }
+
+
 {
   "compilerOptions": {
-    "allowJs": true,
-    "target": "es5",
-    "module": "esnext",
-    "baseUrl": "./",
-    "moduleResolution": "bundler",
+    "allowJs": true,                  // You can keep this if needed
+    "target": "es5",                   // Targeting ES5 for compatibility
+    "module": "esnext",                // Use esnext for modern module systems
+    "baseUrl": "./",                   // Base directory for module resolution
+    "moduleResolution": "node",        // Correct module resolution strategy
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]                 // Mapping @ to the src folder
     },
     "lib": [
       "esnext",
       "dom",
-      "dom.iterable",
-      "scripthost"
+      "dom.iterable"
     ]
   }
 }
+
