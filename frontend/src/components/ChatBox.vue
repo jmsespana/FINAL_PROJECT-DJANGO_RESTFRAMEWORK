@@ -174,7 +174,7 @@ export default {
       try {
         const receiverId = this.selectedReceiver.id;
 
-        const response = await axios.get('http://127.0.0.1:8000/chat/api/messages-by-receiver/', {
+        const response = await axios.get('http://127.0.0.1:8000/chat/messages-by-receiver/', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
           },
@@ -194,7 +194,7 @@ export default {
       try {
         const receiverId = this.selectedReceiver.id;
 
-        const response = await axios.get('http://127.0.0.1:8000/chat/api/messages-by-sender/', {
+        const response = await axios.get('http://127.0.0.1:8000/chat/messages-by-sender/', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
           },
@@ -228,7 +228,7 @@ export default {
       };
 
       try {
-        const response = await axios.post('http://localhost:8000/chat/api/messages/', messageData, {
+        const response = await axios.post('http://localhost:8000/chat/messages/', messageData, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
             'Content-Type': 'application/json',
