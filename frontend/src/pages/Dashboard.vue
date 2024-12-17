@@ -60,7 +60,11 @@ export default {
                 />
                 <div class="navbar-logo">SnapTalk</div>
             </v-col>
-            <!-- Logout Button -->
+            <v-col class="d-flex justify-end" style="margin-right: -550px; margin-top: -3px;">
+                <router-link to="/chat">
+                    <v-btn @click="ChatPage" class="chat-btn mt-4 mx-2" prepend-icon="mdi-message-text">Go to Chat Page</v-btn>
+                </router-link>
+            </v-col>
             <v-col class="d-flex justify-end">
                 <v-btn @click="logout" class="logout-btn">
                     <v-icon left>mdi-logout</v-icon>
@@ -120,15 +124,6 @@ export default {
                 </v-alert>
             </v-col>
         </v-row>
-
-        <!-- Action Buttons -->
-        <v-row>
-            <v-col>
-                <router-link to="/chat">
-                    <v-btn @click="ChatPage" class="chat-btn mt-4 mx-2">Chat Page</v-btn>
-                </router-link>
-            </v-col>
-        </v-row>
     </v-container>
 </template>
 
@@ -173,16 +168,17 @@ export default {
 .chat-btn {
     font-size: 1rem;
     font-weight: bold;
-    background-color: #2E3B40;
+    background-color: #4F7C82;
     color: #ffffff;
-    padding: 8px 15px;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
 .chat-btn:hover {
-    background-color: #E04E39;
+    background-color: #B8E3E9;
+    color: #0B2E33;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .winter-container {
