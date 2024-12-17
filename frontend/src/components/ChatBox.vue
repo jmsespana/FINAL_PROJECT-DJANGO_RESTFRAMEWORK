@@ -168,7 +168,7 @@ export default {
       <!-- Dashboard Button -->
       <v-col class="d-flex justify-end" style="margin-right: -550px; margin-top: -3px;">
         <router-link to="/dashboard">
-          <v-btn @click="ChatPage" class="chat-btn mt-4 mx-2" prepend-icon="mdi-message-text">Go to Dashboard</v-btn>
+          <v-btn @click="DashboardPage" class="chat-btn mt-4 mx-2" prepend-icon="mdi-message-text">Go to Dashboard</v-btn>
         </router-link>
       </v-col>
 
